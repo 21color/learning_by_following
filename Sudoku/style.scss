@@ -3,17 +3,56 @@
   padding: 0;
 }
 
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #puzzle {
   width: 450px;
   height: 450px;
+  background: wheat;
+  border-radius: 10px;
+  padding: 20px;
 }
+
 #puzzle input {
   width: 50px;
+  color: #947336;
+  font-size: 30px;
+  text-align: center;
   height: 50px;
   box-sizing: border-box;
   border-spacing: 0;
-  border: 1px solid gray;
+  border: .5px solid #947336;
 }
+
 .odd-section {
   background: lightblue;
+}
+
+#solve-button {
+  background: wheat;
+  color: #947336;
+  font-size: 30px;
+  padding: 10px;
+  border: none;
+  margin: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#explainer {
+  background: wheat;
+  width: 500px;
+  height: 100px;
+  border-radius: 5px;
+  color: #947336;
+  font-size: 20px;
+  letter-spacing: .5px;
+  text-align: center;
+  line-height: 100px;
+
 }
