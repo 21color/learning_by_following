@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'HallymGothic-Regular';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2204@1.0/HallymGothic-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+html {
+  font-size: 62.5%;
+}
+
+.app {
+  text-transform: uppercase;
+  font-family: 'HallymGothic-Regular';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background: whitesmoke;
+  padding: 10rem;
+}
+
+.question-area-title {
+  font-size: 2rem;
+  background: violet;
+  color: whitesmoke;
+  border-radius: .4rem;
+  text-shadow: 0rem 1rem 2rem #dd69c9;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 0rem 2rem 4rem #793d7543;
+          box-shadow: 0rem 2rem 4rem #793d7543;
+  letter-spacing: .3rem;
+}
+
+.question-area-subtitle {
+  letter-spacing: .3rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  background: whitesmoke;
+  color: violet;
+  border-radius: .4rem;
+  padding: 1rem;
+  -webkit-box-shadow: 0rem 2rem 4rem #7d687c43;
+          box-shadow: 0rem 2rem 4rem #7d687c43;
+}
+
+.question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.question-box {
+  font-size: 1.5rem;
+  background-color: #202020fc;
+  color: whitesmoke;
+  margin: 1.5rem;
+  border-radius: 1rem;
+  padding: 0 4rem 1rem 4rem;
+  -webkit-box-shadow: 0rem 2rem 4rem #20202043;
+          box-shadow: 0rem 2rem 4rem #20202043;
+}
+
+.question-box .question--text {
+  font-size: 1.5rem;
+  padding: 1rem;
+  letter-spacing: .2rem;
+}
+
+.question h1 {
+  color: violet;
+  padding: .5rem;
+}
+
+.question-button {
+  background: whitesmoke;
+  color: violet;
+  padding: 1rem;
+  border: none;
+  border-radius: .2rem;
+  font-family: inherit;
+  letter-spacing: .1rem;
+  margin: .5rem;
+  text-transform: inherit;
+}
+
+.question-button:hover {
+  -webkit-transition: .25s;
+  transition: .25s;
+  cursor: pointer;
+  background: violet;
+  color: whitesmoke;
+  font-weight: 700;
+  -webkit-box-shadow: 1rem -2rem 4rem #db7cd472;
+          box-shadow: 1rem -2rem 4rem #db7cd472;
+}
+
+.question-button:disabled {
+  background: #797979;
+  color: #2020206b;
+}
+
+.answer-display {
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: whitesmoke;
+}
+
+.answer-display.correct {
+  color: violet;
+  text-shadow: 1rem -2rem 4rem #db7cd472;
+}
+
+.answer-display.wrong {
+  color: #797979;
+}
